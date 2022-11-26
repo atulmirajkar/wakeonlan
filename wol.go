@@ -121,7 +121,7 @@ func createPayload(macAddr string) ([]byte, error) {
 }
 
 func isMacAddrValid(macAddr string) bool {
-	matched, _ := regexp.MatchString("^([0-9A-Fa-f]{6})$", macAddr)
+	matched, _ := regexp.MatchString("^([0-9A-Fa-f]{12})$", macAddr)
 	return matched
 }
 
